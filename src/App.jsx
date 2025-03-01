@@ -19,12 +19,12 @@ export default function App() {
         setChars(data.results)
       })
       .catch(e => {
-        debugger
+        //debugger
         if (e.name == 'AbortError')
           aborted = true;
       })
       .finally((e) => {
-        debugger
+        //debugger
         if (!aborted)
           setLoading(false)
       })
